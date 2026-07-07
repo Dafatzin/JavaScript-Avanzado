@@ -1,0 +1,29 @@
+{
+    "libros": [
+        {
+            "titulo": "El Principito",
+            "autor": "Antoine de Saint-Exupéry",
+            "genero": "Ficción",
+            "disponible": true
+        },
+        {
+            "titulo": "1984",
+            "autor": "George Orwell",
+            "genero": "Distopía",
+            "disponible": false
+        },
+        {
+            "titulo": "Orgullo y Prejuicio",
+            "autor": "Jane Austen",
+            "genero": "Romance",
+            "disponible": true
+        }
+    ]
+}  {
+            "titulo": "El Principito 2",
+            "autor": "Antoine de Saint-Exupéry",
+            "genero": "Fábula",
+            "disponible": true
+        }
+    ]
+}
