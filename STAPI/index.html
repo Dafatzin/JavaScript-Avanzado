@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Atzin S">
+		<title>Stranger Things API</title>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+	</head>
+	<body class="bg-black">
+		<nav class="flex flex-wrap justify-center bg-black"> 
+            <img src="Stranger-Things-Logo.png" alt="Logo Stranger Things" class="justify-center w-[12%]">
+			<hr class="w-full border-t-6 border-red-500 my-0 shadow-[0_0_10px_2px_red]">
+        </nav>
+		<section class="flex flex-wrap bg-black gap-[4%]">
+			<h1 class= "font-bold text-[30px] text-white mt-6 ml-4">P E R S O N A J E S :</h1>
+			<div id="personajes" class="flex flex-wrap w-[81%] gap-4 ml-4"></div>
+			<div class="w-[12%]">
+			<button id="BtnF" class=" bg-radial from-red-500 to-red-700 text-white text-[24px] font-bold m-2 w-[38%] h-[70%] rounded-lg justify-center cursor-pointer">Fetch</button>
+			<button id="BtnA" class=" bg-radial from-red-500 to-red-700 text-white text-[24px] font-bold m-2 w-[38%] h-[70%] rounded-lg justify-center cursor-pointer">Axios</button>
+			</div>
+		</section>
+		 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+         <script src="Personajes.js"></script>
+	</body>
+</html>
