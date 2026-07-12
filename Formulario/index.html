@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Atzin S">
+  <title>Formulario</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[url('Fondo.jpg')] bg-cover">
+  <nav class="bg-black flex justify-center items-center gap-[48%]"> 
+    <img src="Logo.png" alt="Logo" class="w-[20%] m-[8px]">
+    <p class="text-white font-bold text-[20px]">LA MEJOR OPCIÓN PARA TU EVENTO</p>
+  </nav>
+  <section class="flex flex-wrap justify-center"> 
+    <div class="items-center mt-[2%]"> 
+      <h1 class="text-white font-bold text-[68px]">FORMULARIO DE EVENTOS</h1>
+    </div>
+
+    <div class="bg-black/90 w-[80%] h-[80%] mb-[2%]">
+      <form id="registroEvento" class="mt-[1%] mb-[1%]" novalidate>
+      <label for="nombre" class="text-white text-[30px] ml-[5%] mt-[1%]"> Nombre:</label>
+      <input type="text" id="nombre" placeholder="Ingrese su Nombre Completo" class="w-[90%] h-[40px] ml-[5%] mt-[1%] mb-[1%] rounded-lg">
+      <p id="error-nombre" class="error-message ml-[5%]"></p>
+      <label for="email" class="text-white text-[30px] ml-[5%] mt-[0.5%]"> Correo Electrónico:</label>
+      <input type="email" id="email" placeholder="Ingrese su correo electrónico" class="w-[90%] h-[40px] ml-[5%] mt-[1%] mb-[1%] rounded-lg">
+      <p id="error-email" class="error-message ml-[5%]"></p>
+      <label for="telefono" class="text-white text-[30px] ml-[5%] mt-[0.5%]"> Teléfono:</label>
+      <input type="tel" id="telefono" placeholder="Ingrese su número de teléfono" class="w-[90%] h-[40px] ml-[5%] mt-[1%] mb-[1%] rounded-lg">
+      <p id="error-telefono" class="error-message ml-[5%]"></p>
+
+      <label class="text-white text-[30px] ml-[5%] mt-[0.5%]"> Intereses:</label>
+      <div class="flex ml-[20%] gap-[18%]">
+      <label class="flex text-white text-[30px] gap-8"><input type="checkbox" name="intereses" value="tecnología"> Tecnología</label>
+      <label class="flex text-white text-[30px] gap-8"><input type="checkbox" name="intereses" value="negocios"> Negocios</label>
+      <label class="flex text-white text-[30px] gap-8"><input type="checkbox" name="intereses" value="arte"> Arte</label>
+      </div>
+
+      <div class="mt-[1%]">
+       <label class="text-white text-[30px] ml-[5%] mt-[0.5%]">Horario preferido:</label>
+       <div class="flex gap-[18%] ml-[20%]">
+       <label class="flex text-white text-[30px] gap-8"><input type="radio" name="horario" value="mañana" required> Mañana</label>
+       <label class="flex text-white text-[30px] gap-8"><input type="radio" name="horario" value="tarde"> Tarde</label>
+       <label class="flex text-white text-[30px] gap-8"><input type="radio" name="horario" value="noche"> Noche</label>
+     </div>
+     </div>
+
+     <div class="flex gap-10 items-center">
+     <label for="fecha" class="text-white text-[30px] ml-[5%] mt-[1%]">Fecha del evento:</label>
+     <input type="date" id="fecha" name="fecha" required class="h-[60%] w-[50%]items-center">
+     <label for="hora" class="text-white text-[30px] ml-[5%] mt-[1%]">Hora preferida:</label>
+     <input type="time" id="hora" name="hora" required class="h-[60%] w-[50%]items-center">
+     </div>
+
+    <div class="flex gap-8 items-center"> 
+      <label for="archivo" class="text-white text-[30px] ml-[5%] mt-[1%]">Documento de identificación (opcional):</label>
+     <input type="file" id="archivo" name="archivo">
+    </div>
+
+    <button type="submit" class="bg-white h-[48px] w-[30%] font-bold text-[30px] flex items-center justify-center ml-[33%] mt-[2%] rounded-lg">Registrarse</button>
+      </form>
+    </div>
+  </section>
+  <script src="Form.js"></script>
+</body>
+</html>

@@ -1,0 +1,3 @@
+.error-message {color: #ff6b6b; font-size: 14px;min-height: 18px; margin-top: -8px; margin-bottom: 8px;}
+.campo-invalido { border: 2px solid #ff6b6b !important; background-color: #fff5f5;}
+.campo-valido {border: 2px solid #4ade80 !important;}
