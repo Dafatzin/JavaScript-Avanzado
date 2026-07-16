@@ -1,0 +1,31 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    color: aliceblue;
+    background-color: black;
+}
+
+#numero {
+    padding: 2px;
+    margin-right: 5px;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #090546;
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+}
+
+#mensaje {
+    margin-top: 10px;
+    font-weight: bold;
+    color: aliceblue;
+    background-color: #090546;
+}
+#imagen img{
+    width: 30%;
+    height: auto;
+    align-items: center;
+}
